@@ -1,0 +1,167 @@
+body{
+    background-image: url(https://pbs.twimg.com/media/EvLDJDiWYAUwp6T?format=jpg&name=4096x4096);
+    background-size: 100vw;
+    background-position: 0 -129px;
+    background-repeat: no-repeat;
+    background-color: rgb(36, 36, 36);
+    margin: 0;
+    overflow-x: hidden;
+
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#init{
+    width: 100vw;
+    height: 100vh;
+}
+
+#logo{
+    width: 200px;
+    height: 200px;
+    backdrop-filter: blur(10px);
+    border: solid 2px rgb(0, 0, 0);
+}
+
+#botLogin{
+    display: flex;
+    justify-content: center;
+
+
+    position: absolute;
+    padding: 10px;
+    right: 10px;
+    top: 10px;
+    width: 96px;
+    background-color: white;
+
+    transition: all 0.1s;
+}
+
+#botLogin:hover {
+    scale: 1.05;
+}
+
+#loginPg{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -105%;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+
+    transition: 0.3s;
+}
+
+#loginPg #ptP{
+    background-color: rgba(0, 0, 0, 0.736);
+    width: 70%;
+    height: 100%;
+
+    transition: 0.1s;
+}
+
+#loginPg #ptB{
+    background-color: rgb(36, 36, 36);
+    width: 30%;
+    height: 100%;
+}
+
+#prxEvt{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+#prxEvt :is(#p1, #p2){
+    height: 108px;
+    width: 420px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#prxEvt #p1{
+    color: white;
+    background-color: black;
+}
+#prxEvt #p2{
+    font-size: 20px;
+    background-color: white;
+    font-weight: 700;
+}
+
+#grid{
+    display: grid;
+}
+
+#grid div{
+    border: solid 2px #fff;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+/* .sketchfab-embed-wrapper iframe{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+} */
+
+p {
+    color:white;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.in {
+    display: flex;
+    flex-direction: column;
+    border-color: white;
+    gap: 20px;
+    align-items: center;
+}
+
+#text1, #text2, #text3 {
+    background-color: #222630;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    outline: none;
+    width: 280px;
+    color: white;
+    border-radius: 0.5rem;
+    border-width: 2px;
+    border-style: solid;
+    transition: background-color 100ms, border-color 100ms;
+    border-color: #2B3040;
+}
+
+#text1:focus, #text2:focus, #text3:focus {
+    border-color: #596A95;
+}
+
+button {
+    background-color: white;
+    border-color: black; 
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
