@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrossel Horizontal Contínuo</title>
+  <style>
+    /* Estilos para o container do carrossel */
+    .carrossel-container {
+      width: 80%;
+      overflow: hidden; /* Esconde as imagens que ficam fora da área visível */
+      margin: 20px auto;
+      padding: 10px;
+      position: relative;
+    }
+
+    /* Estilos para a área das imagens */
+    .carrossel-wrapper {
+      display: flex;
+      animation: rolar 12s linear infinite; /* Animação de rotação */
+    }
+
+    /* Estilos para cada imagem */
+    .carrossel-item {
+      width: 300px;
+      height: 200px;
+      margin-right: 10px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+    }
+
+    /* Estilos para as imagens de fundo (substitua pelas suas imagens) */
+    .img1 { background-image: url('https://via.placeholder.com/300x200?text=Imagem+1'); }
+    .img2 { background-image: url('https://via.placeholder.com/300x200?text=Imagem+2'); }
+    .img3 { background-image: url('https://via.placeholder.com/300x200?text=Imagem+3'); }
+    .img4 { background-image: url('https://via.placeholder.com/300x200?text=Imagem+4'); }
+
+    /* Animação que faz as imagens se moverem para a esquerda */
+    @keyframes rolar {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%); /* Desloca para a esquerda */
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="carrossel-container">
+    <div class="carrossel-wrapper">
+      <div class="carrossel-item img1"></div>
+      <div class="carrossel-item img2"></div>
+      <div class="carrossel-item img3"></div>
+      <div class="carrossel-item img4"></div>
+      <!-- Duplicando as imagens para garantir que o carrossel seja contínuo -->
+      <div class="carrossel-item img1"></div>
+      <div class="carrossel-item img2"></div>
+      <div class="carrossel-item img3"></div>
+      <div class="carrossel-item img4"></div>
+    </div>
+  </div>
+
+</body>
+</html>

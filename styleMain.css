@@ -20,8 +20,8 @@ body{
 #logo{
     width: 200px;
     height: 200px;
-    backdrop-filter: blur(10px);
-    border: solid 2px rgb(0, 0, 0);
+   
+    
 }
 
 #botLogin{
@@ -319,3 +319,47 @@ button {
     position: absolute;
     transition: all 0.2s;
 }
+
+.slider {
+    background-color: rgb(53, 53, 53);
+    height: 250px;
+    width: 100vw;
+    
+  }
+  
+  .slider .move {
+    display: flex;
+    width: 200px;
+    animation: animacion 15s linear infinite;
+    gap: 200px;
+  }
+  
+  @keyframes animacion {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  
+  .slider .box {
+    height: 250px;
+    width: 250px;
+  }
+  
+  img{
+    width: 250px;
+    height: 250px;
+  }
+  
+
+  .move{
+    
+    display: grid;
+    grid-template-columns: repeat(6,300px);
+    grid-template-rows: repeat(2,300px);
+
+
+  }
+  
