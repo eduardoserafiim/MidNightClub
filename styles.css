@@ -6,6 +6,10 @@
     background-size: 400% 400%;
     background-attachment: fixed;
 
+<<<<<<< Updated upstream
+=======
+    overflow-x: hidden;
+>>>>>>> Stashed changes
 }
 
 p,h1,a{
@@ -28,6 +32,13 @@ p,h1,a{
     
 }
 
+<<<<<<< Updated upstream
+=======
+#noisDnv{
+    display: flex;
+}
+
+>>>>>>> Stashed changes
 #oceano{
     display: flex;
     justify-content: center;
@@ -40,6 +51,7 @@ p,h1,a{
     
 }
 
+<<<<<<< Updated upstream
 #imagem,#imagem2,#imagem3,#imagem4,#imagem5{
     width: 400px;
     height: 400px;
@@ -47,6 +59,20 @@ p,h1,a{
     border-radius: 50%;
     animation: rotate 3s infinite ease-in-out;
 
+=======
+:is(#imagem,#imagem2,#imagem3,#imagem4,#imagem5){
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 50%;
+    animation: none 3s infinite ease-in-out;
+    
+    transition: all 0.5s;
+}
+
+:is(#imagem,#imagem2,#imagem3,#imagem4,#imagem5):hover{
+    scale: 1.1;
+>>>>>>> Stashed changes
 }
 
 #linkedin{
@@ -74,8 +100,12 @@ p,h1,a{
 
 .card1,.card2,.card3,.card4,.card5{
     text-align: center;
+<<<<<<< Updated upstream
     padding: 4%;
     height: 400px;
+=======
+    padding: 42px;
+>>>>>>> Stashed changes
     background-color: #3f3f3f;
 
 }
@@ -84,7 +114,11 @@ p,h1,a{
     100% {
       transform: rotate(360deg);
     }
+<<<<<<< Updated upstream
   }
+=======
+}
+>>>>>>> Stashed changes
 
 @keyframes gradient {
     0% {
@@ -147,4 +181,10 @@ p,h1,a{
     100% {
         transform: translateX(1);
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+/* @hnrcqroz */
+
+>>>>>>> Stashed changes
