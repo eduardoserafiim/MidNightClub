@@ -6,7 +6,6 @@ body{
     background-color: rgb(36, 36, 36);
     margin: 0;
     overflow-x: hidden;
-
     font-family: "Inter", sans-serif;
     font-style: italic;
     font-size: 22px;
@@ -28,8 +27,6 @@ body{
 #botLogin{
     display: flex;
     justify-content: center;
-
-
     position: absolute;
     padding: 10px;
     right: 10px;
@@ -52,7 +49,6 @@ body{
     height: 100vh;
     width: 100vw;
     z-index: 1;
-
     transition: 0.3s;
 }
 
@@ -60,7 +56,6 @@ body{
     background-color: rgba(0, 0, 0, 0.736);
     width: 70%;
     height: 100%;
-
     transition: 0.1s;
 }
 
@@ -165,3 +160,162 @@ button {
     cursor: pointer;
 }
 
+.centro{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.container{
+
+    display: grid;
+    grid-template-columns: repeat(3,600px);
+    grid-template-rows: repeat(2,400px);
+    background-color: rgb(53, 53, 53);
+    gap: 4px;
+}
+
+.item1{
+    
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: rgb(92,92,92);
+    grid-column: 1 ;
+    grid-row: 1 / 3;
+    transition: all 0.5s;
+}
+
+.item2{
+
+    background-color:  rgb(92, 92, 92);
+    grid-column: 2;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    transition: all 0.5s;
+    
+}
+
+.item3{
+
+    background-color:  rgb(92, 92, 92);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    transition: all 0.5s;
+
+}
+
+.item4{
+
+    background-color:  rgb(92, 92, 92);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.item1:hover{
+
+
+    background-color: #fc466b;
+
+    .carro1{
+        height: 100%;
+        width: 100%;
+        opacity: 100%;
+        
+    }
+
+    .logo1{
+
+        opacity: 0%;
+
+        transition: all 0.2s;
+    }
+}
+
+.item2:hover{
+
+    background-color: #fc466b;
+
+    .carro1{
+        height: 100%;
+        width: 100%;
+        opacity: 100%;
+        
+    }
+
+    .logo1{
+
+        opacity: 0%;
+
+        transition: all 0.2s;
+    }
+    
+}
+
+.item3:hover{
+
+    background-color: #fc466b;
+
+    .carro1{
+        height: 100%;
+        width: 100%;
+        opacity: 100%;
+        
+    }
+
+    .logo1{
+
+        opacity: 0%;
+        transition: all 0.2s;
+    }
+    
+
+}
+
+.item4:hover{
+
+    background-color: #fc466b;
+
+    .carro1{
+        height: 100%;
+        width: 100%;
+        opacity: 100%;
+        
+    }
+
+    .logo1{
+
+        opacity: 0%;
+
+        transition: all 0.2s;
+    }
+    
+}
+
+
+.carro1{
+
+    width: 60%;
+    height: 60%;
+    opacity: 0%;
+
+    transition: all 1s;
+}
+
+.logo1{
+
+    display: flex;
+    width: 5%;
+    height: 5%;
+    position: absolute;
+    transition: all 0.2s;
+}
