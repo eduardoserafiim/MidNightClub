@@ -4,6 +4,7 @@ const body = document.getElementsByTagName('body')[0]
 const ptP = document.getElementById('ptP')
 const ptB = document.getElementById('ptB')
 const botaologin = document.getElementsByClassName('botaofodao')[0]
+const comentar = document.getElementsByClassName('comentario')[0]
 const input1fodao = document.getElementById('text1')
 const input2fodao = document.getElementById('text2')
 const input3fodao = document.getElementById('text3')
@@ -61,28 +62,25 @@ carrosel()
 
 botaologin.addEventListener('click', function(){
     if(input1fodao.value == ''){
-        ptB.innerHTML += `
-        <div id='comentario'>
+        comentar.innerHTML += `
             <p id='falatorionegativo'>
                 Precisa colocar um nome né bonitão.
             </p>
-        </div>`
+            `
     }else if(input2fodao.value == ''){
-        ptB.innerHTML += `
-        <div id='comentario'>
+        comentar.innerHTML += `
+
             <p id='falatorionegativo'>
                 Precisa do CPF lenda.
             </p>
-        </div>`
+            `
     }else if(input3fodao.value == ''){
-        ptB.innerHTML += `
-        <div id='comentario'>
+        comentar.innerHTML += `
             <p id='falatorionegativo'>
                 Meu Deus cara coloca um email.
             </p>
-        </div>`
-        /*setInterval(function () {ptB.remove()}, 1000);*/
-        ptB.remove()
+        `
     }
-
+    setTimeout(function () {console.log('oi'); comentar.innerHTML = ''}, 2500);
+    
 })
