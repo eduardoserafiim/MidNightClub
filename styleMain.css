@@ -322,7 +322,7 @@ button {
 
 .slider {
     background-color: rgb(53, 53, 53);
-    height: 250px;
+    height: 500px;
     width: 100vw;
     
   }
@@ -344,13 +344,14 @@ button {
   }
   
   .slider .box {
+    margin-top: 100px;
     height: 250px;
     width: 250px;
   }
   
   img{
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
   }
   
 
