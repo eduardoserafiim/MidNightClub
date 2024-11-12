@@ -165,12 +165,14 @@ p,h1,a{
 
 
 
-@media (max-width: 838px){
+@media (max-width: 900px){
     #noisDnv{
-        flex-direction: column;
-        width: 500px;
-        margin-left: 20%;
-        margin-right: 25%;
-    }
+        display: flex;
+        margin: 0;
 
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 400px;
+    }
 }
