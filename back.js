@@ -1,3 +1,4 @@
+
 const pagLog = document.getElementById('loginPg')
 const body = document.getElementsByTagName('body')[0]
 const ptP = document.getElementById('ptP')
@@ -40,3 +41,16 @@ function relogio() {
 
 relogio();
 
+var i = 0
+var totImg = 6
+function carrosel(){
+    const carr = document.getElementById('best')
+    carr.innerHTML = `<img src='carro${i}.jpg'>`
+    i++
+    if(i > totImg){
+        i = 0
+    }
+    setTimeout(carrosel,3000)
+}
+
+carrosel()

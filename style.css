@@ -6,7 +6,6 @@ body{
     background-color: rgb(36, 36, 36);
     margin: 0;
     overflow-x: hidden;
-
     font-family: "Inter", sans-serif;
     font-style: italic;
     font-size: 22px;
@@ -21,21 +20,22 @@ body{
 #logo{
     width: 200px;
     height: 200px;
-    backdrop-filter: blur(10px);
-    border: solid 2px rgb(0, 0, 0);
+    position: fixed;
+    z-index: 1;
+   
+    
 }
 
 #botLogin{
     display: flex;
     justify-content: center;
-
-
-    position: absolute;
+    position: fixed;
     padding: 10px;
     right: 10px;
     top: 10px;
     width: 96px;
     background-color: white;
+    z-index: 1;
 
     transition: all 0.1s;
 }
@@ -51,8 +51,7 @@ body{
     right: -105%;
     height: 100vh;
     width: 100vw;
-    z-index: 1;
-
+    z-index: 2;
     transition: 0.3s;
 }
 
@@ -60,7 +59,6 @@ body{
     background-color: rgba(0, 0, 0, 0.736);
     width: 70%;
     height: 100%;
-
     transition: 0.1s;
 }
 
@@ -118,7 +116,7 @@ body{
     z-index: -1;
 } */
 
-p {
+#par {
     color:white;
     margin-top: 20px;
     font-size: 50px;
@@ -151,17 +149,152 @@ p {
     border-color: #2B3040;
 }
 
-
 #text1:focus, #text2:focus, #text3:focus {
-    border-color: white;
+    border-color: #596A95;
 }
 
 button {
+    background-color: white;
+    border-color: black; 
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.centro{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.container{
+    margin: 500px 0 500px 0;
+    display: grid;
+    grid-template-columns: repeat(3,500px);
+    grid-template-rows: repeat(2,400px);
+    gap: 6px;
+
+    /* background-color: #bbb; */
+    /* border: solid #bbb 6px; */
+
+}
+
+.item1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #929292;
+    grid-column: 1 ;
+    grid-row: 1 / 3;
+    transition: all 0.5s;
+    padding: 40px;
+    text-align: center;
+}
+
+.item2{
+
+    background: #929292;
+    grid-column: 2;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+.item3{
+
+    background: #929292;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    transition: all 0.5s;
+
+}
+
+:is(.item1,.item2,.item3):hover{
+
+    background: #929292;
+    
+    .carro1{
+        height: 100%;
+        width: 100%;
+        opacity: 100%;
+        display: block;
+    }
+
+    .logo1{
+        opacity: 0%;
+
+        transition-duration: 0.2s;
+    }
+}
+
+.carro1{
+
+    width: 90%;
+    height: 90%;
+    opacity: 0%;
+
+    transition: all 1s;
+}
+
+.logo1{
+
+    display: flex;
+    width: 5%;
+    height: 5%;
+    position: absolute;
+    transition: all 0.2s;
+}
+
+#quemSomos{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#somos{
+    font-size: 20px;
+    color: #ffffff;
+    text-align:justify;
+    font-weight: 700;
+}
+
+#best{
+    width: 600px;
+    transition: all 1s;
+}
+
+#best img{
+    position: absolute;
+    width: 500px;
+    height: 293px;
+    object-fit: cover;
+    object-position: center;
+
+    transition: all 1s;
+}
+button {
+    margin-top: 40px;
+    width: 450px;
     font-family: "Inter";
     font-size: 17px;
     padding: 1em 2.7em;
     font-weight: 500;
-    background: #1f2937;
+    background: black;
     color: white;
     border: none;
     position: relative;
@@ -178,11 +311,6 @@ button {
     top: 0;
     border-radius: 0.6em;
     margin-top: -0.25em;
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.3)
-    );
   }
   
   .label {
@@ -191,6 +319,9 @@ button {
   }
   
   .transition {
+    font-family: "Inter";
+    font-size: 17px;
+    font-weight: 500;
     transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
     transition-duration: 500ms;
     background-color: white;
@@ -208,11 +339,99 @@ button {
   }
   
   button:hover .transition {
-    width: 14em;
+    width: 450px;
     height: 14em;
   }
   
   button:active {
     transform: scale(0.97);
   }
+
+
+/* .slider {
+    background-color: rgb(53, 53, 53);
+    height: 250px;
+    width: 100vw;
+    
+  }
   
+  .slider .move {
+    display: flex;
+    width: 200px;
+    animation: animacion 15s linear infinite;
+    gap: 200px;
+  }
+  
+  @keyframes animacion {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  
+  .slider .box {
+    height: 250px;
+    width: 250px;
+  }
+  
+  img{
+    width: 250px;
+    height: 250px;
+  }
+  
+
+  .move{
+    
+    display: grid;
+    grid-template-columns: repeat(6,300px);
+    grid-template-rows: repeat(2,300px);
+
+
+  }
+   */
+
+/* .slider {
+    background-color: rgb(53, 53, 53);
+    height: 250px;
+    width: 100vw;
+    
+  }
+  
+  .slider .move {
+    display: flex;
+    width: 200px;
+    animation: animacion 15s linear infinite;
+    gap: 200px;
+  }
+  
+  @keyframes animacion {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  
+  .slider .box {
+    height: 250px;
+    width: 250px;
+  }
+  
+  img{
+    width: 250px;
+    height: 250px;
+  }
+  
+
+  .move{
+    
+    display: grid;
+    grid-template-columns: repeat(6,300px);
+    grid-template-rows: repeat(2,300px);
+
+
+  }
+   */
