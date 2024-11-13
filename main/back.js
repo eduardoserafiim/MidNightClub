@@ -81,6 +81,9 @@ botaologin.addEventListener('click', function(){
             </p>
         `
     }
+    else{
+        comentar.innerHTML += ` <p id="falatorio"> Inscrição realizada com sucesso</p>`
+    }
     setTimeout(function () {console.log('oi'); comentar.innerHTML = ''}, 2500);
     
 })

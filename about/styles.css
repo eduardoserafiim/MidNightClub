@@ -1,0 +1,178 @@
+
+#bodyfoda{
+    margin: 0%;
+    background: linear-gradient(315deg, rgb(216, 79, 0) 3%, rgb(139, 10, 224) 38%, rgb(233, 86, 1) 68%, rgb(240, 45, 11) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+}
+
+p,h1,a{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: white;
+
+}
+
+#numseimaiorqueooceano{
+    margin: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+    padding: 4%;
+    height: 400px;
+    background-color: #3f3f3f;
+    
+}
+
+#noisDnv{
+    display: flex;
+}
+
+
+#oceano{
+    display: flex;
+    justify-content: center;
+
+}
+
+#agua{
+    width: 100px;
+    height: 150px;
+    
+}
+
+:is(#imagem,#imagem2,#imagem3,#imagem4,#imagem5){
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 50%;
+    animation: none 3s infinite ease-in-out;
+    transition: all 0.5s;
+}
+
+:is(#imagem,#imagem2,#imagem3,#imagem4,#imagem5):hover{
+    scale: 1.1;
+
+}
+
+#linkedin{
+    display: flex;
+    width: 100px;
+
+}
+
+#github{
+    display: flex;
+    width: 100px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    scroll-behavior: smooth;
+
+}
+
+.card1,.card2,.card3,.card4,.card5{
+    text-align: center;
+    padding: 42px;
+    background-color: #3f3f3f;
+
+}
+
+@keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgba(0, 0, 0, 0.733);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+
+}
+/* @hnrcqroz */
+
+
+
+@media (max-width: 900px){
+    #noisDnv{
+        display: flex;
+        margin: 0;
+
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 400px;
+    }
+}
