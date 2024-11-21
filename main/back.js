@@ -50,12 +50,12 @@ var i = 0
 var totImg = 6
 function carrosel(){
     const carr = document.getElementById('best')
-    carr.innerHTML = `<img class="carroselcarros" src='FotosP/carro${i}.jpg'>`
+    carr.innerHTML = `<img src='FotosP/carro${i}.jpg'>`
     i++
     if(i > totImg){
         i = 0
     }
-    setTimeout(carrosel,1500)
+    setTimeout(carrosel,3000)
 }
 
 carrosel()
