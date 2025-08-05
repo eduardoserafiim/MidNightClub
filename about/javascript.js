@@ -23,7 +23,7 @@ const membros = {
     serafim: {
         name: "Eduardo Serafim",
         description: "Conhecido como Eduardo 'Walter White' Serafim, trabalhou honestamente na parte de about us (para os não gringos sobre nós), e também para a conclusão desse trabalho exaustivo, merece o pagamento do seu 13° e também pensa que quem leu isso até o final é gay.",
-        githubLink: "https://github.com/thenewgrau",
+        githubLink: "https://github.com/eduardoserafiim",
         linkedinLink: "https://www.linkedin.com/in/eduardo-serafim-821649305/"
     },
     queiroz: {
@@ -55,11 +55,11 @@ function showInfo(name, description, githubLink, linkedinLink) {
             <p>${description}</p>
             <div id='oceano'>
                 <div id='agua'>
-                    <img id='github' src='Fotos/github.png' alt='github'>
+                    <img id='github' src='about/Fotos/github.png' alt='github'>
                     <a href='${githubLink}' target='_blank'>GitHub</a>
                 </div>
                 <div id='agua'>
-                    <img id='linkedin' src='Fotos/linkedin.png' alt='linkedin'>
+                    <img id='linkedin' src='about/Fotos/linkedin.png' alt='linkedin'>
                     <a href='${linkedinLink}' target='_blank'>Linkedin</a>
                 </div>
             </div>
