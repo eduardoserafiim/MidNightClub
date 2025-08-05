@@ -11,13 +11,13 @@ const membros = {
     sales: {
         name: "João Sales",
         description: "João 'GOAT' Sales, jogava profissionalmente LOL, mas felizmente, desistiu da carreira e veio estudar no SENAC no curso de Analise e Desenvolvimento de Sistemas para ser alguem na vida, obrigado. Fez a parte dos cards de ver a inscrição, foi por ai.",
-        githubLink: "https://github.com/thenewgrau",
+        githubLink: "https://github.com/Moe-L3ster",
         linkedinLink: "https://www.linkedin.com/in/eduardo-serafim-821649305/"
     },
     heitor: {
         name: "João Heitor",
         description: "Um louco e sonhador trabalhador, sinceramente, tenho orgulho desse rapaz, fez a parte de inscrição maravilhosamente, não podia pedir mais desse sujeito de boa vontade. Deve ter 17 anos, não sei, gosta de Drake e tem 1,72 de altura, tamanho do pé = 41, 42 (sinsitro).",
-        githubLink: "https://github.com/thenewgrau",
+        githubLink: "https://github.com/joaoheitoror",
         linkedinLink: "https://www.linkedin.com/in/eduardo-serafim-821649305/"
     },
     serafim: {
@@ -35,7 +35,7 @@ const membros = {
     fernandes: {
         name: "Robert Fernandes",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur inventore reiciendis iste corrupti quas autem nostrum! Tenetur obcaecati voluptas fugiat distinctio recusandae necessitatibus aliquam temporibus voluptatem pariatur? Illum, mollitia soluta. Beatae voluptatum libero doloremque repudiandae. Vitae eos sequi eligendi obcaecati non deleniti error aut, maxime facilis nemo adipisci modi explicabo at cum ipsa consequatur! Accusamus consequatur necessitatibus ipsa eveniet minus.",
-        githubLink: "https://github.com/thenewgrau",
+        githubLink: "https://github.com/kamurakk",
         linkedinLink: "https://www.linkedin.com/in/eduardo-serafim-821649305/"
     }
 };

@@ -44,13 +44,13 @@ function relogio() {
     setTimeout(relogio, 1000); // Atualiza a cada segundo
 }
 
-relogio();
+relogio()
 
 var i = 0
 var totImg = 6
 function carrosel(){
     const carr = document.getElementById('best')
-    carr.innerHTML = `<img src='FotosP/carro${i}.jpg'>`
+    carr.innerHTML = `<img src='main/FotosP/carro${i}.jpg'>`
     i++
     if(i > totImg){
         i = 0
